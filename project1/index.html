@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ticket Booking App</title>
+</head>
+<body>
+	<h1>Welcome to Our Go Conference Ticket Booking Application</h1>
+
+	<form action="/book" method="POST">
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="firstname" required><br>
+
+		<br>
+
+		<label for="lastname">Last Name:</label>
+		<input type="text" id="lastname" name="lastname" required><br>
+
+		<br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<br>
+
+		<label for="numoftickets">Number of Tickets:</label>
+		<input type="number" id="numoftickets" name="numoftickets" min="1" required><br>
+
+		<br>
+
+		<input type="submit" value="Book Ticket">
+	</form>
+
+    <h1>We Have Total 50 Tickets</h1>
+	<h2>Remaining Tickets: {{.}}</h2>
+</body>
+</html>
